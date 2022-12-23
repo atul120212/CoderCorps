@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Zoom from 'react-reveal/Zoom';
 function App() {
@@ -8,9 +7,9 @@ function App() {
       <h1>
         <div className='headname'>
         <Zoom left cascade>
-          Coder
+          Welcome to 
         </Zoom>
-        <Zoom right cascade> Corps </Zoom>
+        <Zoom right cascade>Coder Corps </Zoom>
         </div>
       </h1>
       </header>
