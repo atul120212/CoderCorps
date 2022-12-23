@@ -13,7 +13,6 @@ function App() {
         <Zoom right cascade> Corps </Zoom>
         </div>
       </h1>
-        <h1>Welcome to Coder Corps Community</h1>
       </header>
     </div>
   );
