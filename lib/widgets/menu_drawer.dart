@@ -18,7 +18,8 @@ class MenuDrawer extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               InkWell(
-                onTap: () {},
+                onTap: () {
+                },
                 child: Text(
                   'Home',
                   style: TextStyle(color: Colors.white, fontSize: 22),

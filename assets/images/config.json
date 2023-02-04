@@ -1,0 +1,30 @@
+{
+  "name": "",
+  "css_prefix_text": "",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "240f7203a815d923ce245acb7634874e",
+      "css": "ethereum-1",
+      "code": 59392,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M0 0L0 1000 1000 1000 1000 0 0 0Z",
+        "width": 1000
+      },
+      "search": [
+        "ethereum"
+      ]
+    },
+    {
+      "uid": "c3fd8648f20d8b2f864853c4af99089c",
+      "css": "ether",
+      "code": 62510,
+      "src": "fontawesome5"
+    }
+  ]
+}

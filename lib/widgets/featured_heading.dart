@@ -31,7 +31,7 @@ class FeaturedHeading extends StatelessWidget {
             ),
             SizedBox(height: 5,),
           Text(
-            'Clue of the wooden cottage',
+            'Boost Your Skills',
             textAlign: TextAlign.end,
           ),
     
@@ -53,7 +53,7 @@ class FeaturedHeading extends StatelessWidget {
             Expanded(
                   child: 
                   Text(
-                    'Clue of the wooden cottage',
+                    'Boost Your Skills',
                     textAlign: TextAlign.end,
                   ),
                 ),

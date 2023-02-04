@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.white.withOpacity(_opacity),
         title:  Center(
           child: Text(
-                'Author',
+                'Coder Corps',
                 style: TextStyle(
                   color: Color(0xFF077bd7),
                   fontSize: 26,

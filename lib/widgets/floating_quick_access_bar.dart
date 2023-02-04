@@ -1,3 +1,4 @@
+import 'package:flutter_web/widgets/my_flutter_app.dart';
 import 'package:flutter_web/widgets/responsive.dart';
 import 'package:flutter/material.dart';
 
@@ -17,12 +18,12 @@ class _FloatingQuickAccessBarState extends State<FloatingQuickAccessBar> {
   List _isHovering = [false, false, false, false];
   List<Widget> rowElements = [];
 
-  List<String> items = ['History', 'Science', 'Philosophy', 'Novels'];
+  List<String> items = ['Flutter', 'BlockChain', 'Web 3.0', 'AI & ML'];
   List<IconData> icons = [
-    Icons.location_on,
-    Icons.date_range,
-    Icons.people,
-    Icons.wb_sunny
+    Icons.flutter_dash,
+    MyFlutterApp.ether,
+    Icons.language,
+    Icons.support_agent
   ];
 
   List<Widget> generateRowElements() {

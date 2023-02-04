@@ -38,7 +38,7 @@ class _TopBarContentsState extends State<TopBarContents> {
                   children: [
                     SizedBox(width: screenSize.width/4,),
                     Text(
-                      'Author',
+                      'Coder Corps',
                       style: TextStyle(
                         color: Color(0xFF077bd7),
                         fontSize: 26,
