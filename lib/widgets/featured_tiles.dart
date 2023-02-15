@@ -98,7 +98,7 @@ class FeaturedTiles extends StatelessWidget {
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(5.0),
                                     child: Image.asset(
-                                      'assets/images/tests1.jpg',
+                                      'assets/images/chainn.gif',
                                       fit: BoxFit.cover,
                                     ),
                                       
@@ -108,7 +108,7 @@ class FeaturedTiles extends StatelessWidget {
                             Padding(
                               padding: EdgeInsets.only(
                               top: screenSize.height/70,
-                              left: screenSize.width/7.7
+                              left: screenSize.width/10.5
                             ),
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
@@ -118,7 +118,7 @@ class FeaturedTiles extends StatelessWidget {
                           onPrimary: Color.fromARGB(255, 255, 255, 255),
                         ),
                         child: Text(
-                          'Poster Corps',
+                          'Register Now',
                           style: TextStyle(
                             fontSize: 16,
                             fontFamily: 'Montserrat',
@@ -127,11 +127,10 @@ class FeaturedTiles extends StatelessWidget {
                         ),
                         onPressed: ()
                         async {
-                          final Uri _url =Uri.parse('https://linktr.ee/codercorps');
+                          final Uri _url =Uri.parse('https://forms.gle/vjrQwLctog1wkeSZA');
                           if (!await launchUrl(_url)) {
                             await launchUrl(_url);
                           }
-
                         },
                       ),
                               
@@ -142,110 +141,9 @@ class FeaturedTiles extends StatelessWidget {
 
 //-----------------------------------------------------
 
-                      Padding(
-                          padding: EdgeInsets.only(
-                          left: screenSize.width/20),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            SizedBox(
-                                  height: screenSize.width/2.5,
-                                  width: screenSize.width/1.5,
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(5.0),
-                                    child: Image.asset(
-                                      'assets/images/tests2.jpg',
-                                      fit: BoxFit.cover,
-                                    ),
-                                      
-                                  ),
-                                ),
-
-                            Padding(
-                              padding: EdgeInsets.only(
-                              top: screenSize.height/70,
-                              left: screenSize.width/7.7
-                            ),
-                    child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          minimumSize: Size(200, 80),
-                          textStyle: TextStyle(fontSize: 10),
-                          primary: Color.fromARGB(255, 144, 19, 217),
-                          onPrimary: Color.fromARGB(255, 255, 255, 255),
-                        ),
-                        child: Text(
-                          'Hack Eater',
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontFamily: 'Montserrat',
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                        onPressed: ()
-                        async {
-                          final Uri _url =Uri.parse('https://linktr.ee/codercorps');
-                          if (!await launchUrl(_url)) {
-                            await launchUrl(_url);
-                          }
-
-                        },
-                      ),
-                              
-                            ),
-                          ],
-                        ),
-                      ),
+//----------------------------------------------------------
 
 // --------------------------------------------------------------------
-
-                        Padding(
-                          padding: EdgeInsets.only(
-                          left: screenSize.width/20),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            SizedBox(
-                                  height: screenSize.width/2.5,
-                                  width: screenSize.width/1.5,
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(5.0),
-                                    child: Image.asset(
-                                      'assets/images/tests3.jpg',
-                                      fit: BoxFit.cover,
-                                    ),
-                                      
-                                  ),
-                                ),
-
-                            Padding(
-                              padding: EdgeInsets.only(
-                              top: screenSize.height/70,
-                              left: screenSize.width/7.7
-                            ),
-                    child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          minimumSize: Size(200, 80),
-                          textStyle: TextStyle(fontSize: 10),
-                          primary: Color.fromARGB(255, 144, 19, 217),
-                          onPrimary: Color.fromARGB(255, 255, 255, 255),
-                        ),
-                        child: Text(
-                          'HacktoberFest',
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontFamily: 'Montserrat',
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                        onPressed: () => Fluttertoast.showToast(
-                        msg: 'Registeration Closed',
-                       )
-
-                      ),
-                            ),
-                          ],
-                        ),
-                      ),
 
 
 
@@ -267,63 +165,7 @@ class FeaturedTiles extends StatelessWidget {
               children: [
                 //...Iterable<int>.generate(assets.length).map(
                   //(int pageIndex) => 
-                  Column(
-                    children: [
-                      SizedBox(
-                        height: screenSize.width / 4,
-                        width: screenSize.width / 3.8,
-                        child: Container(
-                          decoration: BoxDecoration(
-                           borderRadius: BorderRadius.circular(20.0),
-                            image: DecorationImage(
-                            fit: BoxFit.cover,
-                            image: AssetImage(
-                              'assets/images/tests1.jpg',
-                             // fit: BoxFit.cover,
-                            ),
-                            ),
-                            boxShadow: [
-                              BoxShadow(
-                                offset: Offset(0, 10),
-                                blurRadius: 20,
-                                spreadRadius: 5,
-                                color:Colors.grey.withOpacity(0.3),
-                              )
-                            ]
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(
-                        top: screenSize.height / 70,
-                        ),
-                      child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          minimumSize: Size(200, 80),
-                          textStyle: TextStyle(fontSize: 10),
-                          primary: Color.fromARGB(255, 144, 19, 217),
-                          onPrimary: Color.fromARGB(255, 255, 255, 255),
-                        ),
-                        child: Text(
-                          'Poster Corps',
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontFamily: 'Montserrat',
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                        onPressed: ()
-                        async {
-                          final Uri _url =Uri.parse('https://linktr.ee/codercorps');
-                          if (!await launchUrl(_url)) {
-                            await launchUrl(_url);
-                          }
 
-                        },
-                      ),
-                      ),
-                    ],
-                  ),
 // ---------------------------------------------------------------
                   Column(
                     children: [
@@ -336,7 +178,7 @@ class FeaturedTiles extends StatelessWidget {
                             image: DecorationImage(
                             fit: BoxFit.cover,
                             image: AssetImage(
-                              'assets/images/tests2.jpg',
+                              'assets/images/chainn.gif',
                              // fit: BoxFit.cover,
                             ),
                             ),
@@ -363,7 +205,7 @@ class FeaturedTiles extends StatelessWidget {
                           onPrimary: Color.fromARGB(255, 255, 255, 255),
                         ),
                         child: Text(
-                          'Hackt Eater',
+                          'Register Now',
                           style: TextStyle(
                             fontSize: 16,
                             fontFamily: 'Montserrat',
@@ -371,11 +213,10 @@ class FeaturedTiles extends StatelessWidget {
                           ),
                         ),
                         onPressed: () async {
-                          final Uri _url =Uri.parse('https://linktr.ee/codercorps');
+                          final Uri _url =Uri.parse('https://forms.gle/vjrQwLctog1wkeSZA');
                           if (!await launchUrl(_url)) {
                             await launchUrl(_url);
                           }
-
                         },
                       ),
                       ),
@@ -383,69 +224,6 @@ class FeaturedTiles extends StatelessWidget {
                   ),
 
 // ---------------------------------------------------
-                Column(
-                  children: [
-                      SizedBox(
-                        height: screenSize.width / 4,
-                        width: screenSize.width / 3.8,
-                          child: Container(
-                            decoration: BoxDecoration(
-                             borderRadius: BorderRadius.circular(20.0),
-                              image: DecorationImage(
-                              fit: BoxFit.cover,
-                              image: AssetImage(
-                                'assets/images/tests3.jpg',
-                               // fit: BoxFit.cover,
-                              ),
-                              ),
-                              boxShadow: [
-                                BoxShadow(
-                                  offset: Offset(0, 10),
-                                  blurRadius: 20,
-                                  spreadRadius: 5,
-                                  color:Colors.grey.withOpacity(0.3),
-                                )
-                              ]
-                            ),
-                          ),
-                        
-                      ),
-
-                    Padding(
-                      padding: EdgeInsets.only(
-                        top: screenSize.height / 70,
-                      ),
-
-                      child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          minimumSize: Size(200, 80),
-                          textStyle: TextStyle(fontSize: 10),
-                          primary: Color.fromARGB(255, 144, 19, 217),
-                          onPrimary: Color.fromARGB(255, 255, 255, 255),
-
-                        ),
-                        child: Text(
-                          'HacktoberFest',
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontFamily: 'Montserrat',
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                        onPressed: () => Fluttertoast.showToast(
-                          msg: 'Registeration Closed',
-
-                        )
-
-                          
-                          
-                        
-                          
-                      ),
-                      ),
-                  ],
-                ),
-
               ],
             ),
           );

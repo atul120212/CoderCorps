@@ -1,7 +1,10 @@
+import 'package:flutter_web/screens/slapshscreen.dart';
 import 'package:flutter_web/widgets/bottom_bar.dart';
 import 'package:flutter_web/widgets/carousel.dart';
 import 'package:flutter_web/widgets/featured_heading.dart';
+import 'package:flutter_web/widgets/featured_heading2.dart';
 import 'package:flutter_web/widgets/featured_tiles.dart';
+import 'package:flutter_web/widgets/featured_tiles_r2.dart';
 import 'package:flutter_web/widgets/floating_quick_access_bar.dart';
 import 'package:flutter_web/widgets/main_heading.dart';
 import 'package:flutter_web/widgets/menu_drawer.dart';
@@ -43,6 +46,7 @@ class _HomePageState extends State<HomePage> {
         iconTheme: IconThemeData(color: Color.fromARGB(255, 0, 205, 202)),
         elevation: 0,
         backgroundColor: Colors.white.withOpacity(_opacity),
+        
         title:  Center(
           child: Text(
                 'Coder Corps',
@@ -82,9 +86,12 @@ class _HomePageState extends State<HomePage> {
                       FloatingQuickAccessBar(screenSize: screenSize),
                       FeaturedHeading(screenSize: screenSize),
                       FeaturedTiles(screenSize: screenSize),
+                      FeaturedHeading2(screenSize: screenSize),
+                      FeaturedTilesR2(screenSize: screenSize),
                       MainHeading(screenSize: screenSize),
                       MainCarousel(),
                       SizedBox(height: screenSize.height/10),
+                      
                       BottomBar()
       
                     ],

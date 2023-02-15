@@ -21,7 +21,7 @@ class FeaturedHeading extends StatelessWidget {
       Column(
             children: [
               Text(
-              'Featured',
+              'Upcoming',
               style: TextStyle(
                   fontSize: 36,
                   fontFamily: 'Raleway',
@@ -41,7 +41,7 @@ class FeaturedHeading extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
               Text(
-              'Featured',
+              'Upcoming',
               style: TextStyle(
                   fontSize: 36,
                   fontFamily: 'Raleway',
