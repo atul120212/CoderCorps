@@ -98,7 +98,7 @@ class FeaturedTiles extends StatelessWidget {
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(5.0),
                                     child: Image.asset(
-                                      'assets/images/chainn.gif',
+                                      'assets/images/myblock.jpg',
                                       fit: BoxFit.cover,
                                     ),
                                       
@@ -178,7 +178,7 @@ class FeaturedTiles extends StatelessWidget {
                             image: DecorationImage(
                             fit: BoxFit.cover,
                             image: AssetImage(
-                              'assets/images/chainn.gif',
+                              'assets/images/myblock.jpg',
                              // fit: BoxFit.cover,
                             ),
                             ),
