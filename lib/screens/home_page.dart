@@ -1,4 +1,3 @@
-import 'package:flutter_web/screens/splashscreen.dart';
 import 'package:flutter_web/widgets/bottom_bar.dart';
 import 'package:flutter_web/widgets/carousel.dart';
 import 'package:flutter_web/widgets/featured_heading.dart';
@@ -45,27 +44,40 @@ class _HomePageState extends State<HomePage> {
       extendBodyBehindAppBar: true,
       appBar: screenSize.width<800?AppBar(
         iconTheme: IconThemeData(color: Color.fromARGB(255, 0, 205, 202)),
-        elevation: 0,
-        backgroundColor: Colors.white.withOpacity(_opacity),
+        elevation: 10,
+        backgroundColor: Color.fromARGB(255, 79, 229, 249).withOpacity(_opacity),
         
-        title:  Center(
-          child: Text(
-                'Coder Corps',
-                style: TextStyle(
-                  color: Color(0xFF077bd7),
-                  fontSize: 26,
-                  fontFamily: 'Raleway',
-                  fontWeight: FontWeight.w900,
-                  letterSpacing: 3,
-                ),
-              ),
+        title:  Container(
+          margin: const EdgeInsets.fromLTRB(20, 50, 20, 20),
+          child: Center(
+            child:
+            Image.asset(
+              'assets/images/Coder.png',
+            fit: BoxFit.contain,
+            ),
+          ),
         ),
-      ): PreferredSize(
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.notifications),
+            onPressed: () {
+              ZoomDrawer.of(context)!.toggle();
+            },
+          ),
+        ],
+        leading: IconButton(
+          icon: Icon(Icons.menu),
+          onPressed: () {
+            ZoomDrawer.of(context)!.toggle();
+          },
+        ),
+        ): 
+      PreferredSize(
         preferredSize: Size(screenSize.width, 70),
         child: TopBarContents(_opacity),
         ),
 
-        drawer: MenuDrawer(),
+        //drawer: MenuDrawer(),
       body: SingleChildScrollView(
         controller: _scrollController,
         child: Column(
@@ -92,7 +104,7 @@ class _HomePageState extends State<HomePage> {
                       MainHeading(screenSize: screenSize),
                       MainCarousel(),
                       SizedBox(height: screenSize.height/10),
-                      
+                      //MenuDrawer(),
                       BottomBar()
       
                     ],
