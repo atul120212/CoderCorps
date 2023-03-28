@@ -20,6 +20,15 @@ class FeaturedTiles extends StatelessWidget {
 
   final List<String> title = ['Poster Corps - Create your poster', 'Hack Eater -a mini Hackathon', 'Intro to HacktoberFest'];
 
+  launchURL(String url) async {
+    if (await! launchURL(url)) {
+      await launchURL(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return 

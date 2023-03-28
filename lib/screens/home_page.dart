@@ -1,4 +1,4 @@
-import 'package:flutter_web/screens/slapshscreen.dart';
+import 'package:flutter_web/screens/splashscreen.dart';
 import 'package:flutter_web/widgets/bottom_bar.dart';
 import 'package:flutter_web/widgets/carousel.dart';
 import 'package:flutter_web/widgets/featured_heading.dart';
@@ -10,6 +10,7 @@ import 'package:flutter_web/widgets/main_heading.dart';
 import 'package:flutter_web/widgets/menu_drawer.dart';
 import 'package:flutter_web/widgets/top_bar_contents.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 
 class HomePage extends StatefulWidget {
   @override
