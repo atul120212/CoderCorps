@@ -4,6 +4,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
+
 class FeaturedTilesR2 extends StatelessWidget {
   FeaturedTilesR2({
     Key? key,
@@ -13,15 +14,17 @@ class FeaturedTilesR2 extends StatelessWidget {
   final Size screenSize;
 
   final List<String> assets = [
-    'assets/images/tests1.jpg',
+    'assets/images/myblock.jpg',
     'assets/images/tests2.jpg',
     'assets/images/tests3.jpg',
   ];
 
   final List<String> title = ['Poster Corps - Create your poster', 'Hack Eater -a mini Hackathon', 'Intro to HacktoberFest'];
-
+  bool isPressed = false;
   @override
   Widget build(BuildContext context) {
+    Color shadowColor = Color.fromARGB(255, 144, 19, 217);
+
     return 
     /*ResponsiveWidget.isSmallScreen(context)
         ? Padding(
@@ -98,7 +101,7 @@ class FeaturedTilesR2 extends StatelessWidget {
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(5.0),
                                     child: Image.asset(
-                                      'assets/images/tests1.jpg',
+                                      'assets/images/myblock.jpg',
                                       fit: BoxFit.cover,
                                     ),
                                       
@@ -118,21 +121,30 @@ class FeaturedTilesR2 extends StatelessWidget {
                           onPrimary: Color.fromARGB(255, 255, 255, 255),
                         ),
                         child: Text(
-                          'Poster Corpssss',
+                          'Blockchain',
                           style: TextStyle(
+                              shadows: [
+                                for(double i=1; i<10 ;i++)
+                                Shadow(
+                                  color: shadowColor,
+                                  blurRadius: 3,
+                                ),
+                              ],
                             fontSize: 16,
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.w600,
                           ),
                         ),
-                        onPressed: ()
-                        async {
-                          final Uri _url =Uri.parse('https://linktr.ee/codercorps');
-                          if (!await launchUrl(_url)) {
-                            await launchUrl(_url);
-                          }
+                      onPressed: () => Fluttertoast.showToast(
+                      msg: 'Registeration Closed',
+                    )
+                      
+                      
+                      
+                      
+                      
 
-                        },
+                      
                       ),
                               
                             ),
@@ -185,19 +197,22 @@ class FeaturedTilesR2 extends StatelessWidget {
                         child: Text(
                           'Hack Eater',
                           style: TextStyle(
+                              shadows: [
+                                for(double i=1; i<10 ;i++)
+                                Shadow(
+                                  color: shadowColor,
+                                  blurRadius: 3,
+                                ),
+                              ],
                             fontSize: 16,
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.w600,
                           ),
                         ),
-                        onPressed: ()
-                        async {
-                          final Uri _url =Uri.parse('https://linktr.ee/codercorps');
-                          if (!await launchUrl(_url)) {
-                            await launchUrl(_url);
-                          }
+                        onPressed: () => Fluttertoast.showToast(
+                        msg: 'Registeration Closed',
+                      )
 
-                        },
                       ),
                               
                             ),
@@ -241,6 +256,13 @@ class FeaturedTilesR2 extends StatelessWidget {
                         child: Text(
                           'HacktoberFest',
                           style: TextStyle(
+                              shadows: [
+                                for(double i=1; i<10 ;i++)
+                                Shadow(
+                                  color: shadowColor,
+                                  blurRadius: 3,
+                                ),
+                              ],
                             fontSize: 16,
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.w600,
@@ -287,7 +309,7 @@ class FeaturedTilesR2 extends StatelessWidget {
                             image: DecorationImage(
                             fit: BoxFit.cover,
                             image: AssetImage(
-                              'assets/images/tests1.jpg',
+                              'assets/images/myblock.jpg',
                              // fit: BoxFit.cover,
                             ),
                             ),
@@ -314,21 +336,18 @@ class FeaturedTilesR2 extends StatelessWidget {
                           onPrimary: Color.fromARGB(255, 255, 255, 255),
                         ),
                         child: Text(
-                          'Poster Corpsss',
+                          'Blockchain',
                           style: TextStyle(
                             fontSize: 16,
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.w600,
                           ),
                         ),
-                        onPressed: ()
-                        async {
-                          final Uri _url =Uri.parse('https://linktr.ee/codercorps');
-                          if (!await launchUrl(_url)) {
-                            await launchUrl(_url);
-                          }
-
-                        },
+                        onPressed: () => Fluttertoast.showToast(
+                          msg: 'Registeration Closed',
+                        )
+                        
+                                                                                                                    
                       ),
                       ),
                     ],
@@ -364,29 +383,44 @@ class FeaturedTilesR2 extends StatelessWidget {
                         padding: EdgeInsets.only(
                           top: screenSize.height / 70,
                         ),
-                      child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          minimumSize: Size(200, 80),
-                          textStyle: TextStyle(fontSize: 10),
-                          primary: Color.fromARGB(255, 144, 19, 217),
-                          onPrimary: Color.fromARGB(255, 255, 255, 255),
-                        ),
-                        child: Text(
-                          'Hackt Eater',
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontFamily: 'Montserrat',
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                        onPressed: () async {
-                          final Uri _url =Uri.parse('https://linktr.ee/codercorps');
-                          if (!await launchUrl(_url)) {
-                            await launchUrl(_url);
-                          }
 
-                        },
-                      ),
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            minimumSize: Size(200, 80),
+                            textStyle: TextStyle(
+                              fontSize: 10,
+                              shadows: [
+                                for(double i=1; i<10 ;i++)
+                                Shadow(
+                                  color: shadowColor,
+                                  blurRadius: 3,
+                                ),
+                              ] 
+                              ),
+                            primary: Color.fromARGB(255, 144, 19, 217),
+                            onPrimary: Color.fromARGB(255, 255, 255, 255),
+                          ),
+                          child: Text(
+                            'Hack Eater',
+                            style: TextStyle(
+
+                              fontSize: 16,
+                              fontFamily: 'Montserrat',
+                              fontWeight: FontWeight.w600,
+                                shadows: [
+                                  for(double i=1; i<10 ;i++)
+                                  Shadow(
+                                    color: shadowColor,
+                                    blurRadius: 3,
+                                  ),
+                                ] 
+                            ),
+                          ),
+                          onPressed: () => Fluttertoast.showToast(
+                          msg: 'Registeration Closed',
+                        )
+                      
+                        ),
                       ),
                     ],
                   ),
@@ -436,6 +470,13 @@ class FeaturedTilesR2 extends StatelessWidget {
                         child: Text(
                           'HacktoberFest',
                           style: TextStyle(
+                              shadows: [
+                              for(double i=1; i<10 ;i++)
+                              Shadow(
+                                color: shadowColor,
+                                blurRadius: 3,
+                              ),
+                            ],
                             fontSize: 16,
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.w600,
